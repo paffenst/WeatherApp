@@ -1,1 +1,15 @@
-<p>weather works!</p>
+<div class="mycontainer">
+  <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header text-bg-dark text-center">
+      <h3>Hamburg</h3>
+      <p><img src="{{iconURL}}" alt="weather image"></p>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Summery: {{summary}}</p>
+      <p class="card-text">Temperature: {{((temperature - 32) * 5/9).toFixed(2)}} C°</p>
+      <p class="card-text">Feels like: {{((feelsLikeTemp - 32) * 5/9).toFixed(2)}} C°</p>
+      <p class="card-text">Pressure: {{pressure}} hPa</p>
+      <p class="card-text">Humidity: {{humidity}} % </p>
+    </div>
+  </div>
+</div>
